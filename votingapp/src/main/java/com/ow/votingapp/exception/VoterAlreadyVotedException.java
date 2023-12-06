@@ -2,8 +2,10 @@ package com.ow.votingapp.exception;
 
 public class VoterAlreadyVotedException extends Exception {
 
-    public VoterAlreadyVotedException(String errorMessage) {
-        super(errorMessage);
+    private static final String ERROR_MESSAGE = "Voter has already cast a vote";
+
+    public VoterAlreadyVotedException() {
+        super(ERROR_MESSAGE);
     }
 
 }

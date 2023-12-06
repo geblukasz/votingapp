@@ -15,12 +15,4 @@ public class BaseVoterResponse {
     private UUID identificationNumber;
     private boolean voted;
 
-    // Other methods or annotations as needed
-
-    // Explicitly define a constructor
-    public BaseVoterResponse(String name, UUID identificationNumber, boolean voted) {
-        this.name = name;
-        this.identificationNumber = identificationNumber;
-        this.voted = voted;
-    }
 }
