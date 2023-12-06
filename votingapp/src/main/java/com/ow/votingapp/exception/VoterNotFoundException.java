@@ -2,8 +2,10 @@ package com.ow.votingapp.exception;
 
 public class VoterNotFoundException extends Exception {
 
-    public VoterNotFoundException(String errorMessage) {
-        super(errorMessage);
+    private static final String ERROR_MESSAGE = "Voter not found";
+
+    public VoterNotFoundException() {
+        super(ERROR_MESSAGE);
     }
 
 }

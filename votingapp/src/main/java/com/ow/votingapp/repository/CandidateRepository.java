@@ -11,4 +11,5 @@ import java.util.UUID;
 public interface CandidateRepository extends JpaRepository<CandidateEntity, Long> {
 
     Optional<CandidateEntity> findByIdentificationNumber(final UUID identificationNumber);
+
 }

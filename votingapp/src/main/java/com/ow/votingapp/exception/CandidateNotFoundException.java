@@ -2,8 +2,10 @@ package com.ow.votingapp.exception;
 
 public class CandidateNotFoundException extends Exception {
 
-    public CandidateNotFoundException(String errorMessage) {
-        super(errorMessage);
+    private static final String ERROR_MESSAGE = "Candidate not found";
+
+    public CandidateNotFoundException() {
+        super(ERROR_MESSAGE);
     }
 
 }
